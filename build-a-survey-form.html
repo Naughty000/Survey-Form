@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<link rel="stylesheet" href="survey.css">
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Thanks for your precious time.Hoping for positive response.</p>
+
+<div class="container">
+<form id="survey-form">
+  <label id="name-label">
+    <p>Name:</p>
+  <input id="name" type="text" placeholder="Enter your name.." required>
+  </label>
+  <label id="email-label">
+    <p>Email:</p>
+  <input id="email" type="email" placeholder="Enter your email.." required>
+  </label>
+    <label id="number-label">
+      <p>Age:</p>
+
+<input type="number" id="number" placeholder="Enter your age.." min="15" max="30" step="1" value="15">
+</label>
+<br><br><br>
+<p>Select your expertise </p>
+<select id="dropdown">
+  <option value="(select one)">(select one)</option>
+  <option value="Frontend developer">Frontend developer</option>
+  <option value="Backend developer">Backend developer</option>
+<option value="Fullstack developer">Fullstack developer</option>
+<option value="App developer">App developer></option>
+</select>
+<br><br><br>
+<fieldset class="f1">
+<legend>From where you hear about us?</legend>
+<input type="radio" name="choice1" value="rad1" checked>
+<label for ="opt1">Youtube channel</label>
+<br>
+<input type="radio" name="choice1" value="rad2">
+<label for="opt2">Linkdin</label>
+<br>
+<input type="radio" name="choice2" value="rad3">
+<label for="opt3">Friends</label>
+<br>
+<input type="radio" name="choice2" value="rad4">
+<label for="opt4">Facebook</label>
+<br>
+<input type="radio" name="choice3" value="rad5">
+<label for="opt5">Instagram</label>
+<br>
+<input type="radio" name="choice3" value="rad5">
+<label for="opt5">Others</label>
+<br>
+
+</fieldset>
+<br>
+<fieldset class="f2">
+<legend>In which programming language you are expert?</legend>
+<label for="check1" ><input type="checkbox" value="ch1" id="ch1">Python</label>
+<br>
+<label for="check2" ><input type="checkbox" value="ch2" id="ch2">C</label>
+<br>
+<label for="check3" ><input type="checkbox" value="ch3" id="ch3">C++</label>
+<br>
+<label for="check4" ><input type="checkbox" value="ch4" id="ch4">Javascript</label>
+<br>
+<label for="check5" ><input type="checkbox" value="ch5" id="ch5">Java</label>
+<br>
+</fieldset>
+<br><br>
+<p>"I'd love to hear your thoughts on this! What works well, and what could be improved?"</p>
+<textarea row="10" placeholder="Write your suggestions..."></textarea>
+<br><br><br>
+<input type="submit" id="submit" placeholder="Submit">
+  </form>
+  </div>
+  </body>
+  </html>
+
+
+
